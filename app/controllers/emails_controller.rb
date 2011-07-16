@@ -5,7 +5,8 @@ class EmailsController < ApplicationController
 
   def create
     email = params[:email]
-
+    flash[:notice] = "Email recebido."
+    render 'new'
   end
 end
 
